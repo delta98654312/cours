@@ -1,0 +1,53 @@
+.body {
+    font-family: monospace;
+}
+
+
+.container {
+    display:grid;
+    align-items: center;
+    text-align: center;
+    place-content: center;
+}
+
+.contenu {
+    overflow: hidden;
+    width: 50vw;
+    min-width: 400px;
+    min-height: 200px;
+    margin: 10px 0px;
+    border: solid 1px black;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+button {
+    margin: 10px auto;
+}
+
+.h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2px;
+    word-wrap: break-word;
+}
+
+.droite {
+    border: 1px solid #00FF00;
+    background-color: #AAFFAA ;
+    margin-left: 100px;
+}
+
+.gauche {
+    border: 1px solid #0000FF;
+    background-color: #AAAAFF ;
+    margin-right: 100px; 
+}
