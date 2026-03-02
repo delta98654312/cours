@@ -1,0 +1,9 @@
+.container {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#myChart {
+    border: 1px solid black;
+}
