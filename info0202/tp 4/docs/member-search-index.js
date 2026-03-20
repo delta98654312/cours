@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"IPoint","l":"afficher()"},{"p":"<Unnamed>","c":"IPoint","l":"distance()"},{"p":"<Unnamed>","c":"IPoint","l":"distance(IPoint)"},{"p":"<Unnamed>","c":"IPoint","l":"getX()"},{"p":"<Unnamed>","c":"IPoint","l":"getY()"}];updateSearchResults();
