@@ -4,7 +4,7 @@ const shifumi = {
     player: -1,
 
     select: function(type){
-        if (shifumi.player === -1){
+        if (shifumi.player == -1){
             shifumi.player = type;
 
             let imagesU = document.querySelectorAll("#player img");

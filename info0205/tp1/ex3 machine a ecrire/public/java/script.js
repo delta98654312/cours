@@ -1,35 +1,38 @@
 const contenu = document.getElementById('contenu');
 const text = document.getElementById('texte');
 const changements = {
-    "\n":"<br>",
-    ";)":"&#x1F609;",
-    ":)":":(){ : | : &};:"
-}
+  "\n": "<br>",
+  ";)": "&#x1F609;",
+  "mdr": "<i>mort de rire</i>",
+  "jpp": "<i>j'en peux plus</i>",
+  "omg": "<i>oh my god</i>"
+};
 var cpt = 0;
 text.focus();
 
 
 function ajouter () {
-    cpt +=1;
-    
-    contenu.scrollHeight = 1;
-    contenu.scrollTop = contenu.scrollHeight;
-    text.value = text.value
-    if (cpt % 2 === 0) {
-        contenu.innerHTML += '<div class="message gauche">' + text.value
+    cpt += 1;
 
+    let texte = text.value;
+
+    texte = texte.replace(/\n|;\)|mdr|jpp|omg/g, remplacer);
+
+    if (cpt % 2 === 0) {
+        contenu.innerHTML += '<div class="message gauche">' + texte + '</div>';
     } else {
-        contenu.innerHTML += '<div class="message droite">' + text.value
+        contenu.innerHTML += '<div class="message droite">' + texte + '</div>';
     }
 
-    
+
+    contenu.scrollTop = contenu.scrollHeight;
+
 
     text.value = '';
     text.focus();
-    return "Good";
 }
 
-function replacer (chaine){
+function remplacer (chaine){
     return changements[chaine]
 }
 
