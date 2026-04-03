@@ -1,0 +1,53 @@
+.slideshow {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.btnLeft {
+    position: absolute;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    border: 0;
+    background-color: black;
+    opacity: 0;
+    color: white;
+}
+
+.btnRight {
+    position: absolute;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    border-radius: 10px;
+    top: 0;
+    right: 0;
+    border: 0;
+    background-color: black;
+    opacity: 0;
+    color: white;
+    
+}
+
+.btnRight:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.btnLeft:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
