@@ -1,0 +1,17 @@
+.square, .square-selected {
+    width: 80px;
+    height: 80px;
+    display: table-cell;
+    box-sizing: border-box;
+}
+.square {
+    border: 1px solid white;
+}
+.square-selected {
+    border: 1px solid red;
+    background-color: rgba(0, 0, 0, 0.5 );
+}
+.square:hover {
+    border: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0.5 );
+}
